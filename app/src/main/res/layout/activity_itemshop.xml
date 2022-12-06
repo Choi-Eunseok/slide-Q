@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ItemShopActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mileagetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ITEM SHOP"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Icon"
+                android:textSize="25sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/iconLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layOut1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/catbutton"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="0sp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/cat1"
+                            android:enabled="false" />
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="100"
+                            android:textSize="23sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layOut2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/penguinbutton"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="0sp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/pengiun" />
+
+                        <TextView
+                            android:id="@+id/price2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="100"
+                            android:textSize="23sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layOut3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/bearbutton"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="0sp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/bear" />
+
+                        <TextView
+                            android:id="@+id/price3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="100"
+                            android:textSize="23sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layOut4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/lionbutton"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="0sp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/lian" />
+
+                        <TextView
+                            android:id="@+id/price4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="100"
+                            android:textSize="23sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/testbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test" />
+            <Button
+                android:id="@+id/savebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="save" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

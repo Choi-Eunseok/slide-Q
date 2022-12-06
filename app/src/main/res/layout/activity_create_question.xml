@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/q"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CreateQuestionActivity">
+
+    <Spinner
+        android:id="@+id/createQuestionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="3"
+        android:background="@drawable/border_line"
+        android:textSize="40dp"/>
+
+    <EditText
+        android:id="@+id/createQuestionText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border_line"
+        android:gravity="center"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/createQuestionCorrectAnswerText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_line"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Correct Answer"
+            android:inputType="textPersonName"
+            android:textColorHint="#2196F3"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/createQuestionWrongAnswerText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_line"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Wrong Answer"
+            android:inputType="textPersonName"
+            android:textColorHint="#FF5722"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="3"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:text="CREATE"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
